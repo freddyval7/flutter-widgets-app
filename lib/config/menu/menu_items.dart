@@ -19,12 +19,12 @@ const appMenuItems = <MenuItem>[
     icon: Icons.play_arrow,
     title: 'Buttons',
     subTitle: 'Buttons Screen',
-    link: '/button',
+    link: '/buttons',
   ),
   MenuItem(
     icon: Icons.credit_card,
     title: 'Cards',
     subTitle: 'Styled Container',
-    link: '/card',
+    link: '/cards',
   ),
 ];
