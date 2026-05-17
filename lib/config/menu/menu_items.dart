@@ -15,17 +15,16 @@ class MenuItem {
 }
 
 const appMenuItems = <MenuItem>[
-  MenuItem(icon: Icons.home, title: 'Home', subTitle: 'Home', link: '/'),
+  MenuItem(
+    icon: Icons.play_arrow,
+    title: 'Buttons',
+    subTitle: 'Buttons Screen',
+    link: '/button',
+  ),
   MenuItem(
     icon: Icons.credit_card,
     title: 'Cards',
     subTitle: 'Styled Container',
     link: '/card',
-  ),
-  MenuItem(
-    icon: Icons.account_balance,
-    title: 'Account',
-    subTitle: 'Styled Container',
-    link: '/account',
   ),
 ];
