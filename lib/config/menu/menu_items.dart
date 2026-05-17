@@ -22,4 +22,10 @@ const appMenuItems = <MenuItem>[
     subTitle: 'Styled Container',
     link: '/card',
   ),
+  MenuItem(
+    icon: Icons.account_balance,
+    title: 'Account',
+    subTitle: 'Styled Container',
+    link: '/account',
+  ),
 ];
