@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart' show IconData, Icons;
 
 class MenuItem {
@@ -62,5 +63,11 @@ const appMenuItems = <MenuItem>[
     subTitle: "Inifinite Lists and Pull to refresh",
     link: "/infinite",
     icon: Icons.refresh,
+  ),
+  MenuItem(
+    title: "Counter Screen",
+    subTitle: "A counter managed with riverpod",
+    link: "/counter",
+    icon: Icons.add,
   ),
 ];
