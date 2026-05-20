@@ -21,7 +21,7 @@ class AppTheme {
     : assert(selectedColor >= 0, 'selectedColor must be greater than 0'),
       assert(
         selectedColor < colorList.length,
-        'selectedColor must be less than colorList.length',
+        'selectedColor must be less than ${colorList.length}',
       );
 
   ThemeData getTheme() => ThemeData(
@@ -29,5 +29,10 @@ class AppTheme {
     brightness: isDarkMode ? Brightness.dark : Brightness.light,
     colorSchemeSeed: colorList[selectedColor],
     appBarTheme: AppBarTheme(centerTitle: true),
+  );
+
+  AppTheme copyWith({int? selectedColor, bool? isDarkMode}) => AppTheme(
+    selectedColor: selectedColor ?? this.selectedColor,
+    isDarkMode: isDarkMode ?? this.isDarkMode,
   );
 }
